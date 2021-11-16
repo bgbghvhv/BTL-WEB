@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sách văn học</title>
+    <link rel="stylesheet" href="csschung.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap 4 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Top-bar -->
+      <div class="top-bar">
+        <div class="container">
+            <div class="col-12 text-right">
+                <p ><a href="tel:+84123456">Call us at: (+084) 123 456</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- =====================Navigation========================= -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top  bg-light p-1 m-0">
+        <div class="container">
+            <a class="navbar-brand" href="../Trang chủ/Trang chủ.html"> <img src="img/logo.png" alt="logo" style="width: 50px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link hover-a" href="../Trang chủ/Trang chủ.html">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle hover-a" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Danh mục
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item " href="../Sách văn học/sach-vanhoc.html">Sách Văn Học</a>
+                            <a class="dropdown-item " href="../Sách thiếu nhi/Sachthieunhi.html">Sách Thiếu Nhi</a>
+                            <a class="dropdown-item " href="../Manga-comic/manga-comic.html">Manga-Comic</a>
+                            <a class="dropdown-item " href="../Sách tham khảo/sachthamkhao.html">Sách Tham khảo</a>
+                        </div>
+                    </li>
+                  <li class="nav-item active"><a class="nav-link hover-a" href="#about">About Us</a></li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+                      aria-label="Search">
+                   <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                <a href="../Trang chủ/giohang.html" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- =========================img carrousel======================== -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+
+        <!-- =========================Indicators=========================== -->
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+            <li data-target="#slides" data-slide-to="3"></li>
+        </ul>
+      
+        <!-- ===========================The slideshow========================= -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slide01.jpg" alt="Book1 " class="w-100">
+                <div class="carousel-caption">
+                    <h1 class="display-2">COME HERE WITH US</h1>
+                    <h3>Vì một tương lai mới-tương lai của tri thức Hãy đến với chúng tôi</h3>
+                    <a href="../Trang chủ/Login/login.html" type="button" class="btn btn-primary btn-lg mr-2">ĐĂNG NHẬP</a>
+                    <a href="../Trang chủ/Login/register.html" type="button" class="btn btn-success  btn-lg">ĐĂNG KÍ </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/silde02.jpg" alt="Book2" class="w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slide03.png" alt="Book3" class="w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slide04.png" alt="Book4" class="w-100">
+            </div>
+        </div>
+      
+        <!-- ==========================Left and right controls======================== -->
+        <a class="carousel-control-prev" href="#slides" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slides" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!-- ==============Danh mục sản phẩm================= -->
+    <section>
+        <div class="container">
+            <div class="col-12 text-center mt-5">
+                <h1 class="pt-4"style="color: rgb(30, 182, 238);">Danh mục sản phẩm</h1>
+            </div>
+            <div class="border-top border-primary w-50 mx-auto my-3"></div>
+            <div class=" mt-5">
+                <div class="row ">
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <h4 class="text-center" style="color: rgb(30, 182, 238);">Sách văn học</h4>
+                        <div class="project">
+                            <img src="img/anh05.jpg" alt="">
+                            <div class="overlay text-center">
+                                <div>
+                                    <h4 class="text-white">Sách văn học</h4>
+                                    <!-- <h6 class="text-white">Website Design</h6> -->
+                                    <a href="../Sách văn học/sach-vanhoc.html" class="btn btn-primary">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <h4 class="text-center" style="color: rgb(30, 182, 238);">Sách thiếu nhi</h4>
+                        <div class="project">
+                            <img src="img/anh04.jpg" alt="">
+                            <div class="overlay text-center">
+                                <div>
+                                    <h4 class="text-white">Sách thiếu nhi</h4>
+                                    <!-- <h6 class="text-white">Website Design</h6> -->
+                                    <a href="../Sách thiếu nhi/Sachthieunhi.html" class="btn btn-primary">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <h4 class="text-center" style="color: rgb(30, 182, 238);">Manga-Comic</h4>
+                        <div class="project">
+                            <img src="img/anh05.jpg" alt="">
+                            <div class="overlay text-center">
+                                <div>
+                                    <h4 class="text-white">Manga-Comic</h4>
+                                    <!-- <h6 class="text-white">Website Design</h6> -->
+                                    <a href="../Manga-comic/manga-comic.html" class="btn btn-primary">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <h4 class="text-center" style="color: rgb(30, 182, 238);">Sách Tham Khảo</h4>
+                        <div class="project">
+                            <img src="img/anh04.jpg" alt="">
+                            <div class="overlay text-center">
+                                <div>
+                                    <h4 class="text-white">Tham khảo</h4>
+                                    <!-- <h6 class="text-white">Website Design</h6> -->
+                                    <a href="../Sách tham khảo/sachthamkhao.html" class="btn btn-primary">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+<div class="container">
+    <nav class="navbar navbar-expand-sm text-white abc">
+        <a class="navbar-brand" href="../Trang chủ/Trang chủ.html">Trang chu /</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navbar-brand" href="sach-vanhoc.html">  Sách văn học</a>
+          </li>
+       
+      </ul>
+  </nav>
+  <div class="padding g-4 text-center mt-2">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6 hover-img card1">
+            <div class="project img01 mx-auto">
+                <div class="display-topleft ">Nổi bật</div>
+                <img src="img/bay-chim-canh-cut-nha-popper_2021_bia-1.webp" alt="" style="width: 100%; height: 100%;">
+                <div class="overlay">
+                    <div>
+                        <h4 class="text-white">Bầy cánh cụt nhà Popper</h4>
+                        <a href="bay-chim-canh-cut-nha-hopper.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prica-group">
+                <del class="old-price">20000đ</del>
+                <span class="new-price">15000đ</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6 hover-img card1">
+            <div class="project img01 mx-auto">
+                <div class="display-topleft ">Giảm giá</div>
+                <img src="img/nhung-tam-long-cao-ca.jpg" alt="" style="width: 100%; height: 100%;">
+                <div class="overlay">
+                    <div>
+                        <h4 class="text-white">Những tấm lòng cao cả</h4>
+                        <a href="nhung-tam-long-cao-ca.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prica-group">
+                <del class="old-price">20000đ</del>
+                <span class="new-price">18000đ</span>
+            </div>
+        </div>
+       <div class="col-lg-3 col-md-4 col-sm-4 col-6 hover-img card1">
+            <div class="project img01 mx-auto">
+                <div class="display-topleft ">Giảm giá</div>
+                <img src="img/hai-van-dam-duoi-bien.jpg" alt="" style="width: 100%; height: 100%;">
+                <div class="overlay">
+                    <div>
+                        <h4 class="text-white">Hai vạn dặm dưới biển</h4>
+                        <a href="hai-van-dam-duoi-bien.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prica-group">
+                <del class="old-price">30000đ</del>
+                <span class="new-price">25000đ</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6 hover-img card1">
+            <div class="project img01 mx-auto">
+                <div class="display-topleft ">Hot</div>
+                <img src="img/nguoi-trong-hai-au.jpg" alt="" style="width: 100%; height: 100%;">
+                <div class="overlay">
+                    <div>
+                      <h4 class="text-white">Người trông hải âu</h4>
+                        <a href="nguoi-trong-hai-au.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prica-group">
+                <!-- <del class="old-price">25000đ</del> -->
+                <span class="new-price">15000đ</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6 hover-img card1">
+            <div class="project img01 mx-auto">
+                <div class="display-topleft ">Mới nhất</div>
+                <img src="img/chuyen-rung-xanh.jpg" alt="" style="width: 100%; height: 100%;">
+                <div class="overlay">
+                    <div>
+                       <h4 class="text-white">Chuyện rừng xanh</h4>
+                        <a href="chuyen-rung-xanh.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prica-group">
+                <del class="old-price">23000đ</del>
+                <span class="new-price">20000đ</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6 hover-img card1">
+            <div class="project img01 mx-auto">
+                <div class="display-topleft ">Hot</div>
+                <img src="img/bay-chim-lac.jpg" alt="" style="width: 100%; height: 100%;">
+                <div class="overlay">
+                    <div>
+                       <h4 class="text-white">Bầy chim lạc</h4>
+                        <a href="bay-chim-lac.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prica-group">
+                <del class="old-price">20000đ</del>
+                <span class="new-price">18000đ</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6 hover-img card1">
+            <div class="project img01 mx-auto">
+                <div class="display-topleft ">Hot</div>
+                <img src="img/quan-tro-Ancuta.jpg" alt="" style="width: 100%; height: 100%;">
+                <div class="overlay">
+                    <div>
+                       <h4 class="text-white">Quán trọ Ancuta</h4>
+                        <a href="quan-tro-Ancuta.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prica-group">
+                <del class="old-price">20000đ</del>
+                <span class="new-price">18000đ</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6 hover-img card1">
+            <div class="project img01 mx-auto">
+                <div class="display-topleft ">Hot</div>
+                <img src="img/sinh-vat-than-thoai-khap-the-gian.jpg" alt="" style="width: 100%; height: 100%;">
+                <div class="overlay">
+                    <div>
+                       <h4 class="text-white">Sinh vật thần thoại khắp thế gian</h4>
+                        <a href="sinh-vat-ttktg.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prica-group">
+                <del class="old-price">20000đ</del>
+                <span class="new-price">18000đ</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6 hover-img card1">
+            <div class="project img01 mx-auto">
+                <div class="display-topleft ">Giảm giá</div>
+                <img src="img/nhung-con-ngua-go.jpg" alt="" style="width: 100%; height: 100%;">
+                <div class="overlay">
+                    <div>
+                        <h4 class="text-white">Những con ngựa gỗ</h4>
+                        <a href="nhung-con-ngua-go.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prica-group">
+                <del class="old-price">20000đ</del>
+                <span class="new-price">18000đ</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6 hover-img card1">
+            <div class="project img01 mx-auto">
+                <div class="display-topleft ">Giảm giá</div>
+                <img src="img/nguoi-thoang-hien.jpg" alt="" style="width: 100%; height: 100%;">
+                <div class="overlay">
+                    <div>
+                       <h4 class="text-white">Người thoáng hiện</h4>
+                        <a href="nguoi-thoang-hien.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prica-group">
+                <del class="old-price">20000đ</del>
+                <span class="new-price">18000đ</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6 hover-img card1">
+            <div class="project img01 mx-auto">
+                <div class="display-topleft ">Giảm giá</div>
+                <img src="img/dao-ngan-sao.jpg" alt="" style="width: 100%; height: 100%;">
+                <div class="overlay">
+                    <div>
+                        <h4 class="text-white">Đảo ngàn sao</h4>
+                        <a href="dao-ngan-sao.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prica-group">
+                <del class="old-price">20000đ</del>
+                <span class="new-price">18000đ</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6 hover-img card1">
+            <div class="project img01 mx-auto">
+                <div class="display-topleft ">Giảm giá</div>
+                <img src="img/que-xu-con-nguoi.jpg" alt="" style="width: 100%; height: 100%;">
+                <div class="overlay">
+                    <div>
+                        <h4 class="text-white">Quê xứ con người</h4>
+                        <a href="que-xu-con-nguoi.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prica-group">
+                <del class="old-price">20000đ</del>
+                <span class="new-price">18000đ</span>
+            </div>
+        </div>
+        
+
+
+    </div> 
+</div> 
+</div>
+
+ <!--    <div class="container-fluid mt-2 mb-3">
+        <div class="km">
+            <img class="w-100" src="img/km.jpg" alt="km">
+        </div>
+    </div> -->
+    <section id="about">
+        <div class="container">
+            <div class="col-12 text-center ">
+                <h1 class="text-dark pt-4">About Us</h1>
+            </div>
+            <div class="border-top border-primary w-25 mx-auto my-3 mb-5"></div>
+            <div class="row">
+                <div class="col-md-12 col-lg-7">
+                    <div class="col-md-10">
+                        <p class=" padding" style=" font-size: 20px; text-align: justify;">Tọa lạc tại con phố nhỏ ở Hà Nội,<a href="#"> nhà sách chúng tôi</a> đã hoạt động từ năm 2002 đến nay. Chúng tôi lấy chất lượng là triết lý kinh doanh và sự hài lòng của khách hàng là mục tiêu hoạt động, chính vì vậy mà “Nhà sách trực tuyến Seventeam” luôn được đảm bảo chất lượng về cả nội dung và hình thức mang đến cho bạn đọc các dòng sách hay nhất. Với sự uy tín và lâu dài trong kinh doanh, Seventeam luôn mong muốn mang đến những giá trị vô cùng quý giá từ sách đến mọi người. Một kho tàng văn hóa – nghệ thuật ẩn mình trong mỗi quyển sách.</p>
+                        <span style="font-size: 25px; font-weight: 700; text-transform: uppercase;"> Chính sách bán hàng:</span>
+                        <div class="feature d-flex mt-3">
+                            <div class="iconbox me-3">
+                                <i class='fas fa-thumbs-up'></i>
+                            </div>
+                            <div>
+                                <p style="padding-top: 10px;">Giao hàng tận nơi trên toàn quốc </p>
+                            </div>
+                        </div>
+                        <div class="feature d-flex">
+                            <div class="iconbox me-3">
+                                <i class='fas fa-thumbs-up'></i>
+                            </div>
+                            <div>
+                                <p style="padding-top: 10px;">Uy tín – Chất lượng đặt lên hàng đầu </p>
+                            </div>
+                        </div>
+                        <div class="feature d-flex">
+                            <div class="iconbox me-3">
+                                <i class='fas fa-thumbs-up'></i>
+                            </div>
+                            <div>
+                                <p style="padding-top: 10px;">Đặt cọc và thanh toán phần còn lại khi Nhận hàng </p>
+                            </div>
+                        </div>
+                        <div class="feature d-flex">
+                            <div class="iconbox me-3">
+                                <i class='fas fa-thumbs-up'></i>
+                            </div>
+                            <div>
+                                <p style="padding-top: 10px;"> Bảo đảm 100% như cam kết</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-img ">
+                    <img  src="img/thai-an-ECDZUu1pyKM-unsplash.jpg" alt="book">
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <div class="footer mt-4">
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-12 pt-4">
+                    <h2>Contact us</h2>
+                </div>
+                <div class="col-12 social padding">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <hr class="right">
+                    <h5>SEVENTEAM</h5>
+                    <hr class="right">
+                    <p>000-123-456</p>
+                    <p>gtvt@gmail.com</p>
+                    <p>Số 3 Cầu Giấy-Quận Đống Đa-Tp Hà Nội</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="right">
+                    <h5>Working hours</h5>
+                    <hr class="right">
+                    <p>Monday-Friday:7am-16pm</p>
+                    <p>Weekend: 8am-12am</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="right">
+                    <h5>Sevices</h5>
+                    <hr class="right">
+                    <p>Oursourcing</p>
+                    <p>Website development</p>
+                    <p>Mobile applocations</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5>&copy;SEVENTEAM</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body> 

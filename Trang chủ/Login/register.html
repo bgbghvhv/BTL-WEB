@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap 4 Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        function validate(){
+            var check_username = /^[A-Za-z0-9_]{1,20}$/;
+            var check_password = /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
+            var check_email = /[A-Za-z0-9]+[@]{1}[A-Za-z0-9]+[.]{1}[A-Za-z0-9]{2,5}$/
+            let check_phone = /^[0-9]{10}$/;
+            var ok=0;
+
+            var a = document.getElementById("username").value;
+            var b = document.getElementById("password").value;
+            var c = document.getElementById("email").value;
+            var d = document.getElementById("re_password").value;
+            var e = document.getElementById("phonenumber").value;
+
+            if(a == ""){
+                document.getElementById('acc').innerHTML = '*Bạn chưa nhập tên tài khoản ';
+                ok=0;
+            }
+            else{
+                if(check_username.test(a)){
+                    document.getElementById("acc").innerHTML = "";
+                    document.getElementById("username").value = "";
+                    ok=1;
+                } else{
+                    document.getElementById("acc").innerHTML = "*Tên tài khoản từ 1-20 kí tự !";
+                    ok=0;
+                }
+            }
+
+            if(b == ""){
+                document.getElementById('pass').innerHTML = '*Bạn chưa nhập mật khẩu ';
+                ok=0;
+            }
+            else{
+                if(check_password.test(b)){
+                    document.getElementById("pass").innerHTML = "";
+                    document.getElementById("password").value = "";
+                    ok=1;
+                } else{
+                    document.getElementById("pass").innerHTML = "*Mật khẩu từ 6-20 kí tự ";
+                    ok=0;
+                }
+            }
+
+            if(c == ""){
+                document.getElementById('ema').innerHTML = '*Bạn chưa nhập email';
+                ok=0;
+            }
+            else{
+                if(check_email.test(c)){
+                    document.getElementById("ema").innerHTML = "";
+                    document.getElementById("email").value = "";
+                    ok=1;
+                } else{
+                    document.getElementById("ema").innerHTML = "*Mời bạn nhập đúng định dạng email";
+                    ok=0;
+                }
+            }
+
+            if(d == "" || d !=b){
+                document.getElementById('re_pass').innerHTML = '*Bạn chưa xác nhận đúng mật khẩu';
+                ok=0;
+            }
+            else{
+                if(check_password.test(d)){
+                    document.getElementById("re_pass").innerHTML = "";
+                    document.getElementById("re_password").value = "";
+                    ok=1;
+                } else{
+                    document.getElementById("re_pass").innerHTML = "*Mời bạn xác nhận lại đúng mật khẩu";
+                    ok=0;
+                }
+            }
+            
+            if(e == ""){
+                document.getElementById('phone').innerHTML = '*Bạn chưa nhập số điện thoại';
+                ok=0;
+            }
+            else{
+                if(check_phone.test(e)){
+                    document.getElementById("phone").innerHTML = "";
+                    ok=1;
+                } else{
+                    document.getElementById("phone").innerHTML = "*Số điện thoại phải đủ 10 số";
+                    ok=0;
+                }
+            }
+
+            if(ok){
+                alert("Đăng ký thành công !!");
+                alert("Chúng tôi sẽ dẫn bạn đến trang đăng nhập!");
+                window.location.href ="login.html"
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <!-- Navigation -->
+            <div class="navbar-expand-md navbar-light bg-light fixed-top">
+
+                <nav  class="navbar navbar-expand-lg navbar-light bg-light p-0 ">
+                    <a class="navbar-brand active" href="../Trang chủ.html"><img src="../img/logo.png" alt="Login" style="max-width: 50px;"></a>
+                </nav>
+            </div>
+        </nav>
+        <section class="row font">
+            <div class="col-md-6 col-sm-12 col-12">
+                <div class="container-fluid">
+                    <div class="header">
+                        <h4 style="font-size: 40px; text-align: center; font-family: 'Dancing Script', cursive; ">Đăng Ký</h4>
+                    </div>
+                    <div class="body">
+                        <div ng-controller="loginController" class="ng-scope">
+                            <div>
+                               <label for="username">Tên tài khoản:</label>
+                               <span style="color: #E72D2D;" id="acc"></span>
+                           </div>
+                           <div class="input-group mb-3 ">
+                            <input type="text" class="form-control" id="username" placeholder="Tài khoản" >
+                        </div>
+
+                        <div>
+                          <label for="email">Email:</label>
+                          <span style="color: #E72D2D;" id="ema"></span>
+                      </div>
+                      <div class="input-group mb-3 ">
+                        <input type="email" class="form-control" id="email" placeholder="Email" >
+                    </div>
+
+                    <div>
+                      <label for="Phone">Số điện thoại:</label>
+                      <span style="color: #E72D2D;" id="phone"></span>
+                  </div>
+                  <div class="input-group mb-3 ">
+                    <input type="number" class="form-control" id="phonenumber" placeholder="Số điện thoại" >
+                </div>
+
+                <div>
+                 <label for="password">Mật khẩu:</label>
+                 <span style="color: #E72D2D;" id="pass"></span>
+             </div>
+             <div class="input-group mb-3 ">
+                <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
+            </div>
+
+            <div>
+             <label for="repassword">Xác nhận mật khẩu:</label>
+             <span style="color: #E72D2D;" id="re_pass"></span>
+         </div>
+         <div class="input-group mb-3 ">
+            <input type="password" class="form-control" id="re_password" placeholder="Xác nhận mật khẩu">
+        </div>
+        <form action="/action_page.php" class="was-validated">
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember" required> Tôi đồng ý với điều khoản sử dụng.
+                  <div class="invalid-feedback">Vui lòng chọn để tiếp tục.</div>
+                  <a href="#boxnoidung" aria-expanded="false" data-toggle="collapse">Nội dung điều khoản</a>
+                  <div class="collapse mt-4" id="boxnoidung">
+                    <div class="card card-body ">
+                        <p class="card-text">1.Các hoạt động trên chỉ mang tính thực hiện hình thức không có giá trị hiện thực.<br>
+                            2.Do nội dung kiến thức chưa tiếp thu đầy đủ nên trang web sẽ hoạt động ở mức là web tĩnh. <br>
+                            3.Các nội dung đăng nhập đăng ký không mang hình thức thực sự, chỉ nhằm phát hiện lỗi javascript <br>
+                            4.Các hình thức thanh toán và tối ưu hoá trang web  vẫn đang tiến hành xử lý.
+                            <br>5.Mọi vấn đề xin liên lạc sau.</p>
+                        </div>
+                    </div>
+                </label>
+            </form>
+        </div>
+        <a href="#!" type="button" class="btn btn-success btn-block " style="margin-bottom:20px;" onclick="validate()">Đăng ký</a>
+        <a href="login.html" type="button" class="btn btn-primary btn-block waves-effect waves-light" style="margin-bottom:20px;">Đăng nhập</a>
+    </div>
+</div>
+
+</div>
+</section>
+</div>
+</body>
+</html>

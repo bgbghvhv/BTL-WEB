@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap 4 Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        function validate(){
+            var check_username = /^[A-Za-z0-9_]{1,20}$/;
+            var check_password = /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
+            var ok1,ok2;
+
+            var a = document.getElementById("username").value;
+            var b = document.getElementById("password").value;
+
+            if(a == ""){
+                document.getElementById('acc').innerHTML = '*Bạn chưa nhập tên tài khoản ';
+                ok=0;
+            }
+            else{
+                if(check_username.test(a)){
+                    document.getElementById("acc").innerHTML = "";
+                    document.getElementById("username").value = "";
+                    ok1=1;
+                } else{
+                    document.getElementById("acc").innerHTML = "*Tên đăng nhập của bạn chứa các kí tự không hợp lệ";
+                    ok=0;
+                }
+            }
+
+            if(b == ""){
+                document.getElementById('pass').innerHTML = '*Bạn chưa nhập mật khẩu ';
+                ok=0;
+            }
+            else{
+                if(check_password.test(b)){
+                    document.getElementById("pass").innerHTML = "";
+                    document.getElementById("password").value = "";
+                    ok2=1;
+                } else{
+                    document.getElementById("pass").innerHTML = "*Mật khẩu chứa từ 6-20 ký tự";
+                    ok=0;
+                }
+            }
+            
+            if(ok1==1&&ok2==1){
+                alert("Đăng nhập thành công !!");
+                window.location.href ="../Trang chủ.html"
+            }
+            else alert("Đăng nhập thất bại vui lòng kiểm tra lại thông tin")
+
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <!-- Navigation -->
+            <div class="navbar-expand-md navbar-light bg-light fixed-top">
+
+                <nav  class="navbar navbar-expand-lg navbar-light bg-light p-0 ">
+                    <a class="navbar-brand active" href="../Trang chủ.html"><img src="../img/logo.png" alt="Login" style="max-width: 50px;"></a>
+                </nav>
+            </div>
+        </nav>
+        <section class="row font">
+            <div class="col-md-6 col-sm-12 col-12">
+                <div class="container-fluid">
+                    <div class="header">
+                        <h4 style="font-size: 40px; text-align: center; font-family: 'Dancing Script', cursive; ">Đăng nhập</h4>
+                        <p style="font-size: 25px; text-align: center; font-family: 'Dancing Script', cursive; ">Welcome back.</p>
+                    </div>
+                        <div class="body">
+                            <div ng-controller="loginController" class="ng-scope">
+                                <div><span style="color: #E72D2D;" id="acc"></span></div>
+                                <div class="input-group mb-3 ">
+                                    <input type="text" class="form-control" id="username" placeholder="Tài khoản" ng-model="user.username">
+                                </div>
+                                <div><span style="color: #E72D2D;" id="pass"></span></div>
+                                <div class="input-group mb-3 ">
+                                    <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
+                                </div>
+                            </div>
+                            <a  href="#!" type="button" class="btn btn-primary btn-block waves-effect waves-light" style="margin-bottom:20px;" onclick=" return validate()">Đăng nhập</a>
+                            <a href="#!" class=" input1 text-center "> Quên mật khẩu?</a>
+                            <hr class="my-4">
+                            <div class="signin_with mt-3">
+                                <a href="register.html" class="link btn btn-success btn-block"><i class="zmdi zmdi-lock-open mr-2"></i>Tạo tài khoản mới</a>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+</body>
+</html>

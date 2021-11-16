@@ -1,0 +1,24 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+}
+.font{
+    margin-top: 100px;
+}
+.container-fluid{
+    /* border: 1px solid #000000; */
+    padding: 40px 20px;
+    border-radius: 2px;
+    -webkit-box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.46);
+    -moz-box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.46);
+    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.46);
+}
+.input1{
+    color: #1da1f2;
+    
+}

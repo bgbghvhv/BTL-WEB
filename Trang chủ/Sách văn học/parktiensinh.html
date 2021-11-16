@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Văn học</title>
+    <link rel="stylesheet" href="csschung.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap 4 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script>
+        function test () {
+            alert("Đã thêm vào giỏ hàng");
+        }
+    </script>
+</head>
+<body>
+    <!-- Top-bar -->
+   <div class="top-bar">
+        <div class="container">
+            <div class="col-12 text-right">
+                <p><a href="tel:+84354113988">Call us at: 0354113988</a></p>
+
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top  bg-light p-1">
+        <div class="container">
+            <a class="navbar-brand" href="../Trang chủ.html"> <img src="img/logo.png" alt="logo" style="width: 45px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link hover-a" href="../Trang chủ.html">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle hover-a" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Danh mục
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item " href="../../Sách tham khảo/sachthamkhao.html">Sách Văn Học</a>
+                            <a class="dropdown-item " href="../../Sách thiếu nhi/Sachthieunhi.html">Sách Thiếu Nhi</a>
+                            <a class="dropdown-item " href="../../Manga-comic/manga-comic.html">Manga-Comic</a>
+                            <a class="dropdown-item " href="../../Sách tham khảo/sachthamkhao.html">Sách Tham khảo</a>
+                    </div>
+                </li>
+                <!-- <li class="nav-item active"><a class="nav-link hover-a" href="#about">About Us</a></li>
+                <li class="nav-item active"><a class="nav-link hover-a" href="#myteam">My team</a></li> -->
+            </ul>
+            <form class="form-inline">
+                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+                aria-label="Search">
+                  <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                <a href="../giohang.html" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- img carrousel -->
+<!-- <div id="slides" class="carousel slide" data-ride="carousel">
+
+   <-- Indicators -->
+
+   <section>
+    <div class="col-12 text-center mt-5">
+        <h1 class="text-dark pt-4">Danh mục sản phẩm</h1>
+    </div>
+    <div class="border-top border-primary w-25 mx-auto my-3"></div>
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <h4 class="text-center">Sách văn học</h4>
+                <div class="project">
+                    <img src="img/anh05.jpg" alt="">
+                    <div class="overlay">
+                        <div>
+                            <h4 class="text-white">Sách văn học</h4>
+                            <!-- <h6 class="text-white">Website Design</h6> -->
+                            <a href="../../Sách văn học/sach-vanhoc.html" class="btn btn-primary">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <h4 class="text-center">Sách Thiếu Nhi</h4>
+                <div class="project">
+                    <img src="img/anh04.jpg" alt="">
+                    <div class="overlay">
+                        <div>
+                            <h4 class="text-white">Sách Thiếu Nhi</h4>
+                            <!-- <h6 class="text-white">Website Design</h6> -->
+                            <a href="../../Sách thiếu nhi/Sachthieunhi.html" class="btn btn-primary">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <h4 class="text-center">Manga-Comic</h4>
+                <div class="project">
+                    <img src="img/anh05.jpg" alt="">
+                    <div class="overlay">
+                        <div>
+                            <h4 class="text-white">Manga-Comic</h4>
+                            <!-- <h6 class="text-white">Website Design</h6> -->
+                            <a href="../../Manga-comic/manga-comic.html" class="btn btn-primary">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <h4 class="text-center">Sách Tham khảo</h4>
+                <div class="project">
+                    <img src="img/anh04.jpg" alt="">
+                    <div class="overlay">
+                        <div>
+                            <h4 class="text-white">Sách Tham khảo</h4>
+                            <!-- <h6 class="text-white">Website Design</h6> -->
+                            <a href="../../Sách tham khảo/sachthamkhao.html" class="btn btn-primary">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+   <nav class="navbar navbar-expand-sm text-white abc">
+        <a class="navbar-brand" href="../Trang chủ.html">Trang chủ /</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="navbar-brand" href="../../Sách văn học/sach-vanhoc.html">/ Sách văn học</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="row" style="margin: 30px 0">
+        <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+            <div class="project img02 mx-auto" >
+                <img src="img/vanhoc02.jpg" alt="hạ đỏ" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 mt-3">
+            <h4>Park tiên sinh sống giữa Sài Gòn</h4>
+            <!-- <div class="prica-group">
+                <del class="old-price">20000đ</del>
+                <span class="new-price">15000đ</span>
+            </div> -->
+            <h5 style="display: inline">Tác giả: </h5><span>Park Ji Hoon</span><br>
+            <h5 style="display: inline">Dịch giả: </h5><span>Trần Công Danh</span> <br>
+            <h5 style="display: inline">Số trang: </h5><span>320</span><br>
+            <h5 style="display: inline">Giá bán: </h5><span>39.000 VNĐ</span><br>
+            <h5 style="margin-right: 15px;">Nội dung chính:</h5> 
+            <p style="text-indent: 0px; text-align: justify;">Tác giả bắt đầu làm việc tại Sài Gòn từ năm 2007 và hiện tại là Tổng giám đốc công ty Tư vấn Thiết kế và Xây dựng Junglim Architecture Việt Nam.
+            <br>
+            Ông phụ trách một chuyên mục trong Tạp chí Xin chào Việt Nam dành cho kiều bào người Hàn và cũng là tác giả cuốn sách “Mong seonsaengui Seogong japgi” (xuất bản tại Hàn Quốc) viết về kinh nghiệm sống 10 năm tại Sài Gòn. Ngoài ra ông còn người đại diện Quỹ “Moonbit” (Ánh nước xanh) nhằm hỗ trợ, giúp đỡ cộng đồng và thanh niên Việt Nam; đại diện Quỹ “Arumtaeun gongdongchae” (Beautiful Community) của cộng đồng Hàn kiều tại thành phố Hồ Chí Minh; và là người điều hành website Damascus (www.damascus.co.kr).
+            <br>
+            Cuốn sách ghi lại những ấn tượng, cảm nghĩ, trải nghiệm... của ông đối với Sài Gòn, từ con đường đầy tiếng còi xe, đến thói quen bản địa, phong cách làm việc... Giọng văn duyên dáng, hình minh họa hóm hỉnh. Đối với độc giả Việt Nam, quyển sách giúp cho người Việt Nam có một cái nhìn mới về bản thân mình, nhất là khi họ đang sống ở một thành phố đa văn hóa và là một thành viên của xu thế toàn cầu hóa. </p> 
+            <a href="#!" class="btn btn-primary " style="margin-top: 20px;text-align: center;" onclick="return test()">Mua Ngay</a>  
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="col-12">
+        <p class="newbook-title p-1">Sách khác</p>
+    </div>
+    <div class="padding g-4 text-center mt-2">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 hover-img card1">
+                <div class="project img01 mx-auto">
+                    <div class="display-topleft ">Giảm giá</div>
+                    <img src="img/dao-ngan-sao.jpg" alt="" style="width: 100%; height: 100%;">
+                    <div class="overlay">
+                        <div>
+                            <h5 class="text-white">Đảo ngàn sao</h5>
+                            <a href="../../Sách văn học/dao-ngan-sao.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prica-group">
+                    <del class="old-price">20000đ</del>
+                    <span class="new-price">18000đ</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 hover-img card1">
+                <div class="project img01 mx-auto">
+                    <div class="display-topleft ">Giảm giá</div>
+                    <img src="img/chuyen-rung-xanh.jpg" alt="" style="width: 100%; height: 100%;">
+                    <div class="overlay">
+                        <div>
+                            <h5 class="text-white">Chuyện rừng xanh</h5>
+                            <!-- <h6 class="text-white">Nguyễn Nhật Ánh</h6> -->
+                            <a href="../../Sách văn học/chuyen-rung-xanh.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prica-group">
+                    <del class="old-price">23000đ</del>
+                    <span class="new-price">20000đ</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 hover-img card1">
+                <div class="project img01 mx-auto">
+                    <div class="display-topleft ">Giảm giá</div>
+                    <img src="img/hai-van-dam-duoi-bien.jpg" alt="" style="width: 100%; height: 100%;">
+                    <div class="overlay">
+                        <div>
+                            <h5 class="text-white">Hai vạn dặm dưới biển</h5>
+                            <!-- <h6 class="text-white">Nguyễn Nhật Ánh</h6> -->
+                            <a href="../../Sách văn học/hai-van-dam-duoi-bien.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prica-group">
+                    <del class="old-price">30000đ</del>
+                    <span class="new-price">25000đ</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 hover-img card1">
+                <div class="project img01 mx-auto">
+                    <div class="display-topleft ">Giảm giá</div>
+                    <img src="img/nguoi-trong-hai-au.jpg" alt="" style="width: 100%; height: 100%;">
+                    <div class="overlay">
+                        <div>
+                            <h4 class="text-white">Người trông hải âu</h4>
+
+                            <a href="../../Sách văn học/nguoi-trong-hai-au.html" class="btn btn-primary bnt-01">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prica-group">
+                    <del class="old-price">20000đ</del>
+                    <span class="new-price">15000đ</span>
+                </div>
+            </div>
+        </div> 
+    </div> 
+</div
+<div class="footer mt-4">
+    <div class=" padding">
+        <div class="row text-center padding">
+            <div class="col-12 pt-4">
+                <h2>Contact us</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <hr class="right">
+                <h5>SEVENTEAM</h5>
+                <hr class="right">
+                <p>000-123-456</p>
+                <p>gtvt@gmail.com</p>
+                <p>Số 3 Cầu Giấy-Quận Đống Đa-Tp Hà Nội</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="right">
+                <h5>Working hours</h5>
+                <hr class="right">
+                <p>Monday-Friday:7am-16pm</p>
+                <p>Weekend: 8am-12am</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="right">
+                <h5>Sevices</h5>
+                <hr class="right">
+                <p>Oursourcing</p>
+                <p>Website development</p>
+                <p>Mobile applocations</p>
+            </div>
+            <div class="col-12">
+                <hr class="light-100">
+                <h5>&copy;SEVENTEAM</h5>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
