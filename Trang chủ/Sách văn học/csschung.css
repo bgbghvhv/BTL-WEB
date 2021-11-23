@@ -186,8 +186,26 @@ img{
 
 
 /*footer  */
+ul
+li{
+	list-style: none;
+}
+.footer ul li a{
+	color: #ffffff;
+	transition: 0.25s;
+}
+.footer ul li{
+	padding: 5px 0;
+}
+.footer ul li:hover a{
+	text-decoration: none;
+	margin-left: 15px;
+}
+.footer h5{
+	font-weight: bold;
+}
 .footer{
-	background-color: #3F3F3F;
+	background-color: rgb(41, 44, 47);
 	color: #D5D5D5;
 }
 .fa-facebook{
@@ -196,19 +214,13 @@ img{
 .fa-twitter{
 	color: #1da1f2;
 }
-.fa-instagram{
-	color: #c73c72;
-}
+
 .fa-google-plus-g, .fa-youtube{
 	color: #ff0000;
 }
 .social a{
-	font-size: 3em;/*1em=16px*/
-	padding: 1rem;
-}
-.icon-team{
-    font-size: 2rem;
-    padding: 6px;
+	font-size: 40px;
+	padding: 20px;
 }
 /* --------------- */
 /*Media Query*/

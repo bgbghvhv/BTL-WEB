@@ -10,15 +10,30 @@ a{
 .font{
     margin-top: 100px;
 }
-.container-fluid{
+.login,
+.sign-up{
     /* border: 1px solid #000000; */
     padding: 40px 20px;
     border-radius: 2px;
     -webkit-box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.46);
     -moz-box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.46);
     box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.46);
+    
+}
+.sign-up{
+    margin-bottom: 30px;
 }
 .input1{
     color: #1da1f2;
     
+}
+.header-title{
+    font-size: 40px; 
+    text-align: center; 
+    font-family: 'Dancing Script', cursive;
+}
+.header-title__p{
+    font-size: 25px; 
+    text-align: center; 
+    font-family: 'Dancing Script', cursive;
 }

@@ -28,7 +28,7 @@
         function validate(){
             var check_username = /^[A-Za-z0-9_]{1,20}$/;
             var check_password = /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
-            var ok1,ok2;
+            var ok=0;
 
             var a = document.getElementById("username").value;
             var b = document.getElementById("password").value;
@@ -56,16 +56,16 @@
                 if(check_password.test(b)){
                     document.getElementById("pass").innerHTML = "";
                     document.getElementById("password").value = "";
-                    ok2=1;
+                    ok=1;
                 } else{
                     document.getElementById("pass").innerHTML = "*Mật khẩu chứa từ 6-20 ký tự";
                     ok=0;
                 }
             }
             
-            if(ok1==1&&ok2==1){
+            if(ok){
                 alert("Đăng nhập thành công !!");
-                window.location.href ="../Trang chủ.html"
+                window.location.href ="../Trang chủ.html";
             }
             else alert("Đăng nhập thất bại vui lòng kiểm tra lại thông tin")
 
@@ -73,7 +73,7 @@
     </script>
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container"> -->
         <nav>
             <!-- Navigation -->
             <div class="navbar-expand-md navbar-light bg-light fixed-top">
@@ -83,13 +83,14 @@
                 </nav>
             </div>
         </nav>
-        <section class="row font">
-            <div class="col-md-6 col-sm-12 col-12">
-                <div class="container-fluid">
-                    <div class="header">
-                        <h4 style="font-size: 40px; text-align: center; font-family: 'Dancing Script', cursive; ">Đăng nhập</h4>
-                        <p style="font-size: 25px; text-align: center; font-family: 'Dancing Script', cursive; ">Welcome back.</p>
-                    </div>
+        <section class="container">
+            <div class="row font">
+                <div class="col-md-6 col-sm-12 col-12">
+                    <div class="login">
+                        <div class="header">
+                            <h4 class="header-title">Đăng nhập</h4>
+                            <p class="header-title__p">Welcome back.</p>
+                        </div>
                         <div class="body">
                             <div ng-controller="loginController" class="ng-scope">
                                 <div><span style="color: #E72D2D;" id="acc"></span></div>
@@ -108,10 +109,10 @@
                                 <a href="register.html" class="link btn btn-success btn-block"><i class="zmdi zmdi-lock-open mr-2"></i>Tạo tài khoản mới</a>
                             </div>
                         </div>
+                    </div>
                 </div>
-                
             </div>
         </section>
-    </div>
+    <!-- </div> -->
 </body>
 </html>

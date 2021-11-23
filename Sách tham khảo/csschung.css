@@ -7,7 +7,6 @@
 body{
     overflow-x: hidden;
     background: rgb(245, 245, 245);
-    text-decoration: none;
 }
 img{
   width: 100%;
@@ -36,7 +35,7 @@ img{
 }
 /* carrousel */
 .carousel-inner{
-  max-height: 38rem;
+  max-height: 41rem;
 }
 .carousel-caption {
   position: absolute;
@@ -51,11 +50,11 @@ img{
   font-size: 200%;  
   text-shadow: 2px 2px 10px #000;
 }
-.carousel-control-prev,
+/* .carousel-control-prev,
 .carousel-control-next,
 .carousel-item.active{
     transition:  1.2s ease;
-}
+} */
 /* danh muc */
 .project {
     position: relative;
@@ -64,10 +63,7 @@ img{
     -webkit-box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.46);
     -moz-box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.46);
     box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.46);
-    text-decoration: none;
-    text-align: center;
 }
-
 /* .row{
     margin-bottom: 10px;
 } */
@@ -82,11 +78,11 @@ img{
     display: flex;
     align-items:center;
     justify-content: center;
-    transition: all 1s ease;
+    transition: all 0.4s ease;
     opacity: 0;
 }
 .project img {
-    transition: all 1s ease;   
+    transition: all 0.4s ease;   
 }
 
 .project:hover .overlay{
@@ -172,8 +168,8 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: rgb(30, 182, 238);
+    color: white;
     font-size: 30px;
   margin-bottom: 5px;
     border-radius: 100px;
@@ -186,8 +182,26 @@ img{
 
 
 /*footer  */
+ul
+li{
+  list-style: none;
+}
+.footer ul li a{
+  color: #ffffff;
+  transition: 0.25s;
+}
+.footer ul li{
+  padding: 5px 0;
+}
+.footer ul li:hover a{
+  text-decoration: none;
+  margin-left: 15px;
+}
+.footer h5{
+  font-weight: bold;
+}
 .footer{
-  background-color: #3F3F3F;
+  background-color: rgb(41, 44, 47);
   color: #D5D5D5;
 }
 .fa-facebook{
@@ -196,19 +210,13 @@ img{
 .fa-twitter{
   color: #1da1f2;
 }
-.fa-instagram{
-  color: #c73c72;
-}
+
 .fa-google-plus-g, .fa-youtube{
   color: #ff0000;
 }
 .social a{
-  font-size: 3em;/*1em=16px*/
-  padding: 1rem;
-}
-.icon-team{
-    font-size: 2rem;
-    padding: 6px;
+  font-size: 40px;
+  padding: 20px;
 }
 /* --------------- */
 /*Media Query*/
@@ -258,6 +266,12 @@ img{
   .card-text{
     font-size: 16px;
   }
+  .old-price{
+    font-size: 17px;
+  }
+  .new-price{
+    font-size: 20px;
+  }
 }
 @media (max-width: 576px){
   .form-control{
@@ -281,6 +295,19 @@ img{
   }
   .card-text{
     font-size: 24px;
+  }
+  .old-price{
+    font-size: 15px;
+  }
+  .new-price{
+    font-size: 17px;
+  }
+  .bnt-01{
+    font-size: 14px !important;
+    padding: 0 2px !important;
+  }
+  .display-topleft{
+    font-size: 14px;
   }
 }
 h2{
